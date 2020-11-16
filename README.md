@@ -10,3 +10,10 @@ To save some time and some of sanity in dealing with this problem the python3 sc
 
 Obviously making use of sslurry should be caveated by the fact that the usual potential false positives reported by Nessus will still be present e.g. certificates reported as being untrusted even if signed by a trusted internal certificate authority.
 
+Installation:
+```
+git clone https://github.com/attackdebris/sslurry.git
+```
+
+Usage:
+python3 sslurry.py [.nessus_file]
