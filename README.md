@@ -4,7 +4,7 @@
 
 I've been testing on a large number of heavily populated internal subnets recently. Accurately reporting SSL protocol/cipher and certificate related issues can be time consuming in such scenarios, time that can be utilised more effectively identifying issues not reported by automated scanners and/or assessing more significant issues.
 
-Due to the sheer size of some target environments our testing remit may only extend to identifing services affected by common SSL related failings rather than detailing the more granular issue e.g. report expired certificates are in use but don't detail the actual expiry date.
+Due to the sheer size of some target environments our testing remit may only extend to identifing services affected by common SSL related failings rather than detailing the more granular issue e.g. report expired certificates are in use but don't detail the valid before/valid after dates.
 
 To save some time and some of sanity in dealing with this problem the python3 script sslslurry.py was born, example output below:
 
@@ -16,4 +16,6 @@ git clone https://github.com/attackdebris/sslurry.git
 ```
 
 Usage:
+```
 python3 sslurry.py [.nessus_file]
+```
