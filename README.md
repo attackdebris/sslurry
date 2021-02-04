@@ -2,6 +2,8 @@
 
 ## SSLurry - A quick and dirty .nessus file parser to extract hosts/services affected by SSL related issues
 
+Blog post: https://www.attackdebris.com/?p=594
+
 I've been testing on a large number of heavily populated internal subnets recently. Accurately reporting SSL protocol/cipher and certificate related issues can be time consuming in such scenarios, time that can be utilised more effectively identifying issues not reported by automated scanners and/or assessing more significant issues.
 
 Due to the sheer size of some target environments our testing remit may only extend to identifing services affected by common SSL related failings rather than detailing the more granular issue e.g. report expired certificates are in use but don't detail the valid before/valid after dates.
@@ -19,3 +21,6 @@ Usage:
 ```
 python3 sslurry.py [.nessus_file]
 ```
+
+![Sample Output](https://www.attackdebris.com/wp-content/uploads/2020/11/sslurry_output.jpg)
+
